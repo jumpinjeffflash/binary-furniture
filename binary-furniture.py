@@ -17,8 +17,6 @@ import pandas as pd
 import numpy as np
 from cv2 import cv2
 
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 import random
 import os
 

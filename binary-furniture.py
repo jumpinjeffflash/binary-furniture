@@ -10,7 +10,7 @@ from keras.preprocessing import image
 from keras.metrics import binary_accuracy
 from sklearn.model_selection import train_test_split
 
-from tqdm import tqdm
+from stqdm import stqdm
 
 from PIL import Image, ImageOps
 import pandas as pd

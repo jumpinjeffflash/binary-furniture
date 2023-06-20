@@ -15,7 +15,7 @@ from sklearn.model_selection import train_test_split
 from PIL import Image, ImageOps
 import pandas as pd
 import numpy as np
-from opencv import cv2
+from cv2 import cv2
 
 import random
 import os

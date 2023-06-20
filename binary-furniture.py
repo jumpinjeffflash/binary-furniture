@@ -10,7 +10,12 @@ from keras.preprocessing import image
 from keras.metrics import binary_accuracy
 from sklearn.model_selection import train_test_split
 
+from time import sleep
 from stqdm import stqdm
+
+for _ in stqdm(range(50)):
+    for _ in stqdm(range(15)):
+        sleep(0.5)
 
 from PIL import Image, ImageOps
 import pandas as pd

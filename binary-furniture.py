@@ -1,5 +1,3 @@
-pip install Pillow==9.5.0
-
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 model = tf.keras.models.load_model('binary-furniture3.h5')

@@ -1,4 +1,4 @@
-!pip install Pillow==9.5.0
+pip install Pillow==9.5.0
 
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator

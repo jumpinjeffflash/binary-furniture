@@ -1,3 +1,5 @@
+!pip install Pillow==9.5.0
+
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 model = tf.keras.models.load_model('binary-furniture3.h5')
@@ -37,8 +39,7 @@ with st.expander("Click here for more details about how this model was built"):
 
 def import_and_predict(image_data, model):
         size = (224,224)
-#        image = ImageOps.fit(image_data, size, Image.ANTIALIAS)
-        image = ImageOps.fit(image_data, size, PIL.Image.Resampling.LANCZOS)
+        image = ImageOps.fit(image_data, size, Image.ANTIALIAS)
         image = image.convert('RGB')
         image = np.asarray(image)
         image = (image.astype(np.float32) / 255.0)   

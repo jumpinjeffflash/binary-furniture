@@ -80,7 +80,7 @@ else:
     probability = out_arr.strip("[").strip("]")
     probability_finessed = probability+"%"
 
-    st.markdown("For context, here's our model's prediction of how tricky this table will be to move:")
+    st.markdown("For context, here's our model's prediction of how tricky this item will be to move:")
     st.write(probability_finessed)
     st.markdown("(Scale: 100% = really tricky | 0% = easy peasy)")
  
